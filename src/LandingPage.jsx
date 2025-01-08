@@ -4,7 +4,7 @@ export default function LandingPage() {
     return (
         <>
             <header>
-                <nav class="bg-white border-gray-200 px-4 mt-4 lg:px-6 py-2.5 dark:bg-gray-800">
+                <nav class="bg-white border-gray-200 px-4 pt-4 lg:px-6 py-2.5 dark:bg-gray-800">
                     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                         <a href="#" class="flex items-center">
                             <span class="self-center text-3xl font-bold whitespace-nowrap dark:text-white">Retail Mitra</span>
@@ -19,7 +19,7 @@ export default function LandingPage() {
                         <h1 class="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">Redefining Retail Convenience</h1>
                     </div>
                     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                        <img src="images/Retail Mitra-05.jpg" alt="mockup" />
+                        <img src="images/Retail Mitra-05.jpg" alt="mockup" className="rounded-md" />
                     </div>
                 </div>
             </section>
@@ -34,7 +34,7 @@ export default function LandingPage() {
                         <div>
                             <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                 <svg
-                                    className="w-6 h-6 text-current"
+                                    className="w-6 h-6 text-blue-600"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ export default function LandingPage() {
                         <div>
                             <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                 <svg
-                                    className="w-6 h-6 text-primary-600 dark:text-primary-300"
+                                    className="w-6 h-6 text-blue-600"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
@@ -110,9 +110,67 @@ export default function LandingPage() {
                 </div>
             </section>
 
+            <div className="bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 p-6">
+                {/* <h2 className="text-2xl font-semibold mb-6 text-center">Our Mitras</h2> */}
 
-            <section className="bg-gray-50 dark:bg-gray-800">
-                <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                <div className="max-w-screen-xl container mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/mart.jpg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/kirana-store.jpg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/pharmacy.jpg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/juice.jpg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/dry-fruits.jpeg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                        <div className="overflow-hidden rounded-lg shadow-lg">
+                            <img
+                                src="images/milk-parlour.jpg"
+                                alt="shop"
+                                className="w-full h-48 object-cover transform hover:scale-105 transition duration-300"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <section className="bg-gray-50 dark:bg-gray-800 ">
+                <div className="py-8 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
                     <div className="mb-8 max-w-screen-md lg:mb-16 mx-auto text-center">
                         <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
                             Key Benefits for Retailers
@@ -129,7 +187,7 @@ export default function LandingPage() {
                                 Place orders anytime, anywhere through WhatsApp, saving time and effort.
                             </p>
                         </div>
-                        <div className="max-w-lg p-6 bg-white rounded-lg shadow-md dark:bg-gray-900 self-end text-right">
+                        <div className="max-w-lg p-6 bg-white rounded-lg shadow-md dark:bg-gray-900 self-end text-left">
                             <h3 className="mb-2 text-xl font-bold dark:text-white">Direct Access to Offers</h3>
                             <p className="text-gray-500 dark:text-gray-400">
                                 Stay updated on the latest deals and discounts, ensuring better profit margins.
@@ -141,7 +199,7 @@ export default function LandingPage() {
                                 Reliable and fast delivery ensures shelves are always stocked to meet customer demands.
                             </p>
                         </div>
-                        <div className="max-w-lg p-6 bg-white rounded-lg shadow-md dark:bg-gray-900 self-end text-right">
+                        <div className="max-w-lg p-6 bg-white rounded-lg shadow-md dark:bg-gray-900 self-end text-left">
                             <h3 className="mb-2 text-xl font-bold dark:text-white">Transparency</h3>
                             <p className="text-gray-500 dark:text-gray-400">
                                 Clear and timely updates on order status, delivery schedules, and pricing.
